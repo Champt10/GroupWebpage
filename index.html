@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Bio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+<header>
+    <h1>Meet Our Team</h1>
+    <!-- Example team logo -->
+    <img src="img/Logo.jpg" alt="Team Logo" class="team-logo">
+
+    <!-- Navigation menu to switch between sections -->
+    <nav>
+        <button onclick="showSection('bios')">Team Bios</button>
+        <button onclick="showSection('vision')">Team Vision</button>
+    </nav>
+</header>
+
+<!-- Team bios section (default section) -->
+<div id="bios" class="container">
+    <!-- Each card represents an individual team member -->
+    <div class="card">
+        <h2>Christian Hampton</h2>
+        <p>Product Owner</p>
+        <button onclick="toggleBio('bio1')">Show Bio</button>
+        <p id="bio1" class="bio">Christian Hampton is a senior majoring in Computer Science
+            with a concentration in Cybersecurity <br><br>
+            <img src="./img/Cybersecurity.jpg" alt="Cybersecurity image" width="200" height="100">
+            <br><br>
+            <a href="https://github.com/Champt10">https://github.com/Champt10</a>
+        </p>
+    </div>
+    <div class="card">
+        <h2>Ryan Sawin</h2>
+        <p>Scrum Master</p>
+        <button onclick="toggleBio('bio2')">Show Bio</button>
+        <p id="bio2" class="bio">Ryan is a Junior majoring in Computer Science and Mathematics <br><br><img src="img/ryan_bio_image1.png" alt="Stats image" width="200" height="100"><br><br><a href="https://github.com/ryansawin">https://github.com/ryansawin</a></p>
+    </div>
+    <div class="card">
+        <h2>Cameron Jones</h2>
+        <p>UI/UX Designer</p>
+        <button onclick="toggleBio('bio3')">Show Bio</button>
+        <p id="bio3" class="bio">Cameron Jones is a Sophomore majoring in computer science<br><br><img src="img/images.jpg" alt="Stats image" width="200" height="100">
+    </div>
+</div>
+
+<!-- Team vision/mission statement section (hidden by default) -->
+<div id="vision" class="vision" style="display: none;">
+    <h2>Our Mission Statement</h2>
+    <p>We are a team of computer science students committed to building meaningful and effective solutions through collaboration and innovation.
+Our goal is to combine our individual strengths to create projects that are both practical and well-designed.
+We value clear communication, continuous improvement, and mutual respect as we work together to achieve our goals.</p>
+    <br>
+    <h2>Team Rules</h2>
+<ul>
+  <li>Communicate regularly and keep everyone informed.</li>
+  <li>Respect deadlines and complete assigned tasks on time.</li>
+  <li>Contribute fairly and support one another.</li>
+  <li>Maintain a respectful and professional attitude.</li>
+</ul>
+</div>
+
+<script src="script.js"></script> <!-- Link to external JavaScript file -->
+
+</body>
+</html>
